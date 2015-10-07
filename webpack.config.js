@@ -5,7 +5,7 @@ module.exports = {
 	devtool: 'sourcemap',
 	module: {
 		loaders: [
-			{test: /\.jade$/, loader: 'jade-html!'},
+			{test: /\.html$/, loader: 'raw'},
 			{test: /\.styl$/, loader: 'style!css!stylus'},
 			{test: /\.css/, loader: 'style!css'},
 			{test: /\.(png!jpg!jpeg)/, loader: 'file'}

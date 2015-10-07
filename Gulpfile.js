@@ -10,7 +10,7 @@ var paths = {
   js: 'client/app/**/*!(.spec.js).js',
   styl: 'client/app/**/*.styl',
   toCopy: ['client/index.html'],
-  html: ['client/index.html', 'client/app/**/*.html'],
+  jade: ['client/index.html', 'client/app/**/*.html'],
   dest: 'dist'
 };
 
@@ -27,7 +27,7 @@ gulp.task('build', function() {
 
 gulp.task('serve', function() {
   browser({
-    port: process.enc.PORT || 8000,
+    port: process.env.PORT || 8000,
     open: false,
     ghostMode: false,
     server: {
