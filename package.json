@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "karma start",
+    "start": "gulp"
   },
   "author": "",
   "license": "MIT",
@@ -27,6 +28,8 @@
     "gulp-rename": "^1.2.2",
     "gulp-template": "^3.0.0",
     "gulp-todoist": "0.0.2",
+    "jade": "^1.11.0",
+    "jade-html-loader": "0.0.3",
     "karma": "^0.13.10",
     "karma-chai": "^0.1.0",
     "karma-chrome-launcher": "^0.2.0",
