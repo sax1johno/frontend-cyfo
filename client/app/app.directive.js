@@ -1,14 +1,13 @@
-var template = require('./app.html');
-require('./app.styl');
+import './app.styl';
+import template from './app.html';
 
-var appDirective = function() {
+export const appDirective = () => {
   return {
-    template: template,
+    template,
     restrict: 'E',
     scope: {},
     replace: true
   }
 };
 
-module.exports = appDirective;
 

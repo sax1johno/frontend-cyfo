@@ -1,11 +1,8 @@
-/**
- * Created by Abdullah-Mac on 10/7/15.
- */
-var angular = require('angular');
-var appDirective = require('./app.directive');
-var uiRouter = require('angular-ui-router');
+import {appDirective} from './app.directive';
+import angular from 'angular';
+import uiRouter from 'angular-ui-router';
 
 angular.module('app', [
-
+  uiRouter
 ])
 .directive('app', appDirective);
