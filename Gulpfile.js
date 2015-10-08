@@ -10,7 +10,7 @@ var paths = {
   js: 'client/app/**/*!(.spec.js).js',
   styl: 'client/app/**/*.styl',
   toCopy: ['client/index.html'],
-  jade: ['client/index.html', 'client/app/**/*.html'],
+  html: ['client/index.html', 'client/app/**/*.html'],
   dest: 'dist'
 };
 
