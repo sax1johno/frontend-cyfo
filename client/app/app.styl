@@ -1,8 +1,59 @@
+@import '../styles'
 @import url(http://fonts.googleapis.com/css?family=Open\+Sans:300,400)
+edit()
 
 html
+body
+  height 100%
+
 body
   background-color white
   font-family 'Open Sans', sans-serif
   *
     box-sizing border-box
+a
+  color white
+  text-decoration none
+  &:visited
+    color white
+  &:hover
+  &:active
+    text-decoration none
+
+#app
+  header nav
+    height navbar-height
+    background-color navbar-color
+    z-index max-z
+    position fixed
+    min-width 100%
+    padding 20px
+    .logo
+      span(1/8)
+      color white
+      font-size 1.2rem
+      cursor pointer
+    .links
+      span(7/8)
+      center()
+      float right
+      *
+        font-size 0.9rem
+        margin-left: 20px
+        cursor pointer
+        &:hover
+          color #FFB770
+      .apply
+        border 1px solid #D96C00
+        padding 5px 10px
+        border-radius 5px
+
+
+
+
+  main
+    padding-top navbar-height
+
+main
+  position relative
+  min-height 400px
