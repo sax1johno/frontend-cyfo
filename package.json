@@ -30,6 +30,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-template": "^3.0.0",
     "gulp-todoist": "0.0.2",
+    "holderjs": "^1.7.0",
     "jade": "^1.11.0",
     "jade-html-loader": "0.0.3",
     "jade-loader": "^0.7.1",

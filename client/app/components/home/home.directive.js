@@ -10,5 +10,5 @@ export const homeDirective = () => {
     restrict: 'E',
     scope: {},
     replace: true
-  }
+  };
 };

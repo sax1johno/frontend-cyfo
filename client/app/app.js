@@ -1,7 +1,8 @@
 import 'normalize.css';
-import {appDirective} from './app.directive';
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
+import {appDirective} from './app.directive';
+
 
 import {home} from './components/home/home';
 
