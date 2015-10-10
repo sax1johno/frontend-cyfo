@@ -8,7 +8,7 @@ module.exports = {
 			{test: /\.html$/, loader: 'raw'},
 			{test: /\.styl$/, loader: 'style!css!stylus'},
 			{test: /\.css$/, loader: 'style!css'},
-			{test: /\.(png!jpg!jpeg)/, loader: 'file'},
+			{test: /\.(png|jpg|jpeg)$/, loader: 'file'},
 			{test: /\.js$/, loader: 'babel?stage=1', exclude: [/node_modules/, /\.spec\.js/]}
 		]
 	},

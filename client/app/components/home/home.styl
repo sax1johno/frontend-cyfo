@@ -1,57 +1,122 @@
 @import '../../../styles'
 
+body
+  box-sizing border-box
+
 .home
+  article
+    center(1200px)
   .hero
-    center()
-    height 400px
-    background-color white
-    color black
+    height 500px
+    background-image url(../../../images/citystreet.jpeg)
+    background-size cover
+    color white
+    .layer
+      width 100%
+      height 100%
+      background-color rgba(248, 247, 216, 0.7)
     .title
       text-align center
       overflow hidden
       h1
-        font-size 3rem
-        margin-top 150px
-        font-weight 300
+        font-size 5rem
+        margin-top 200px
+        font-weight 100
+        font-family 'Work Sans', sans-serif
 
   .newsletter
-    center()
     box-sizing border-box
-    height 70px
+    height 90px
     background-color #FF7F00
     color white
     font-size 1rem
     font-weight 300
+    padding 10px
     .info
       margin-top 15px
     .news-message
-      span(1/4, 1/8)
+      span(1/4, 1/6)
       padding 4px 0
+      text-align right
+      line-height 19px
+      margin-right 10px
     .news-input
-      span(1/4)
+      col(1/4)
       .email-input
+        line-height 19px
         width 100%
         background-color white
+        color black
+        border none
+        font-size 1rem
+        &:focus
+          outline none
     .news-submit
-      span(1/4)
-    .exclaimer
-      font-size .5rem
-      center()
-      span(3/4, 1/8)
+      .email-submit
+        border 2px solid #005467
+        padding 3px 8px
+        border-radius 5px
+      button
+        line-height 19px
+        background-color inherit
+        &:hover
+          color #07D0FF
+          border 2px solid #07D0FF
+        &:focus
+          outline none
 
   .not-another-bootcamp
-    center()
-    height 200px
-    background-color #07D0FF
+    height 300px
+    background-color #006D86
     color white
-    .heading
-      text-align center
-      overflow hidden
-      col(5/8, 1/12)
-      h2
-        font-size 2rem
-        margin-top 40px
-        font-weight 300
+    padding 10px
+    *
+      margin 15px 0
+      font-weight 300
+    .not-another-bootcamp-wrapper
+      center(900px)
+      .message-wrapper
+        display inline
+        text-align center
+        overflow hidden
+        span(5/8)
+        margin-right 30px
+        h2
+          font-size 1.4rem
+          text-transform uppercase
+        p
+          font-size .8rem
+      .placeholder-one
+        col(2/8)
+        float right
+        img
+          max-width 80%
+          height auto
+          width auto\9
+          display block
+          margin auto
+
+
+  .benefits
+    height 300px
+    background-color linen
+    color #D96C00
+    padding 20px
+    *
+      margin 20px 0
+    .benefits-wrapper
+      center(900px)
+      font-weight 300
+      font-size .8rem
+      .benefit-column-1
+        center()
+        col(4/8)
+        padding 10px
+      .benefit-column-2
+        col(4/8)
+        padding 10px
+
+
 
   .footer
     height 400px
