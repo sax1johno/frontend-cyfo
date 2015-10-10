@@ -3,9 +3,15 @@
 body
   box-sizing border-box
 
+h1, h2
+  font-family 'Work Sans', sans-serif
+
+h2
+  font-size 2rem
+
 .home
   article
-    center(1200px)
+    width 100%
   .hero
     height 500px
     background-image url(../../../images/citystreet.jpeg)
@@ -54,14 +60,14 @@ body
     .news-submit
       .email-submit
         border 2px solid #005467
-        padding 3px 8px
         border-radius 5px
       button
         line-height 19px
         background-color inherit
+        padding 5px 20px
         &:hover
-          color #07D0FF
-          border 2px solid #07D0FF
+          color #A75300
+          border 2px solid #A75300
         &:focus
           outline none
 
@@ -82,7 +88,6 @@ body
         span(5/8)
         margin-right 30px
         h2
-          font-size 1.4rem
           text-transform uppercase
         p
           font-size .8rem
@@ -96,27 +101,65 @@ body
           display block
           margin auto
 
-
   .benefits
     height 300px
-    background-color linen
-    color #D96C00
+    background-color #006D86
+    color #A6EEFF
     padding 20px
     *
-      margin 20px 0
+      margin 10px 0
     .benefits-wrapper
       center(900px)
       font-weight 300
       font-size .8rem
       .benefit-column-1
-        center()
         col(4/8)
         padding 10px
+        border 2px solid #A6EEFF
       .benefit-column-2
         col(4/8)
         padding 10px
+        border 2px solid #A6EEFF
 
+  .competitive-advantage
+    height 350px
+    background-color white
+    color black
+    padding 20px
+    *
+      margin 20px 0
+    .competitive-advantage-wrapper
+      center(900px)
+      h2
+        text-transform uppercase
+      p
+        font-size .8rem
 
+  .accomplishments
+    height 500px
+    background-color #D96C00
+    color #FFD1A4
+    padding 20px
+    *
+      margin 20px 0
+    .accomplishments-wrapper
+      center(900px)
+      h2
+        text-transform uppercase
+        text-align center
+      .badges-wrapper
+        .badge
+          border 2px solid #FFD1A4
+          col(1/4)
+          padding 10px
+
+  .guarantee
+    height 400px
+    background-color white
+    color black
+    padding 20px
+    *
+      margin 20px 0
 
   .footer
     height 400px

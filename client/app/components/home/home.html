@@ -1,10 +1,7 @@
 <section class="home">
     <article class="hero">
         <div class="title">
-            <div class="layer">
-            </div>
             <h1>{{ vm.title }}</h1>
-
         </div>
     </article>
     <article class="newsletter">
@@ -54,18 +51,31 @@
         </div>
     </article>
     <article class="competitive-advantage">
-        <div class="advantage-heading"></div>
-        <div class="advantage-text"></div>
+        <div class="competitive-advantage-wrapper">
+            <h2>Gain a Competitive Advantage</h2>
+            <p class="advantage-text">
+                Sed efficitur purus sed mi faucibus cursus placerat id purus. Pellentesque et metus ut erat tristique tempus in nec nisl. Donec id nunc ante. Sed et sagittis metus, eu suscipit dolor. Suspendisse in quam non mi egestas porta. Donec sit amet ipsum pharetra, aliquet justo nec, aliquam leo. Fusce accumsan sollicitudin arcu ac varius. Nulla nec lectus accumsan, vestibulum risus vitae, scelerisque tellus. Praesent eget ipsum at diam fringilla malesuada. Integer at tincidunt mi.
+            </p>
+        </div>
     </article>
     <article class="accomplishments">
-        <div class="accomplishments-header">Accomplishment Badges</div>
-        <div class="badges-wrapper" ng-repeat="badge in vm.badges">
-            <div class="badge">{{badge.title}}</div>
+        <div class="accomplishments-wrapper">
+            <div class="accomplishments-header">
+                <h2>Accomplishment Badges</h2>
+            </div>
+            <div class="badges-wrapper">
+                <div class="badge"></div>
+                <div class="badge"></div>
+                <div class="badge"></div>
+                <div class="badge"></div>
+            </div>
         </div>
     </article>
     <article class="guarantee">
-        <div class="guarantee-header"></div>
-        <div class="guarantee-text"></div>
+        <div class="guarantee-wrapper">
+            <div class="guarantee-header"></div>
+            <div class="guarantee-text"></div>
+        </div>
     </article>
     <article class="footer">
 
