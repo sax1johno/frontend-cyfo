@@ -1,11 +1,13 @@
-/**
- * Created by Abdullah-Mac on 10/7/15.
- */
-var angular = require('angular');
-var appDirective = require('./app.directive');
-var uiRouter = require('angular-ui-router');
+import 'normalize.css';
+import angular from 'angular';
+import uiRouter from 'angular-ui-router';
+import {appDirective} from './app.directive';
+
+
+import {home} from './components/home/home';
 
 angular.module('app', [
-
+  uiRouter,
+  home.name
 ])
 .directive('app', appDirective);
