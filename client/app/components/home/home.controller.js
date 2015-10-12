@@ -1,10 +1,8 @@
 import _ from 'lodash';
-import placeholderOne from '../../../images/grayscale.jpeg';
 
 class HomeController {
   constructor() {
     this.title = "Propel Your Future";
-    this.placeholderOne = placeholderOne;
     this.badges = _.times(4, i => {
         return {
           title: `Badge ${i + 1}`,
