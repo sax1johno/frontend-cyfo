@@ -3,12 +3,17 @@
 body
   box-sizing border-box
 
-h1, h2
+h1, h2, h3
   font-family 'Work Sans', sans-serif
 
 h2
   font-size 2.5rem
   font-weight 100
+
+h3
+  font-size 1.2rem
+  weight 100
+  margin 0
 
 p
   font-weight 100
@@ -17,8 +22,8 @@ p
   article
     width 100%
   .hero
-    height 500px
-    background-image url(../../../images/citystreet.jpeg)
+    height 300px
+    background-image url(../../../images/websitecode.jpeg)
     background-size cover
     color white
     .layer
@@ -30,7 +35,7 @@ p
       overflow hidden
       h1
         font-size 5rem
-        margin-top 200px
+        margin-top 100px
         font-weight 100
 
   .newsletter
@@ -46,18 +51,18 @@ p
     .news-message
       span(1/4, 1/6)
       padding 4px 0
-      text-align right
-      line-height 19px
+      text-align center
       margin-right 10px
     .news-input
       col(1/4)
       .email-input
         line-height 19px
         width 100%
-        background-color #FF7F00
-        border-bottom 1px solid #A75300
+        height 100%
+        background transparent
+        z-index 100
         color black
-        font-size 1rem
+        font-size .8rem
         &:focus
           outline none
     .news-submit
@@ -68,6 +73,8 @@ p
         line-height 19px
         background-color inherit
         padding 5px 20px
+        border-radius 5px
+        border 2px solid #005467
         &:hover
           color #A75300
           border 2px solid #A75300
@@ -75,16 +82,17 @@ p
           outline none
 
   .not-another-bootcamp
-    height 400px
+    height 650px
     background-color white
     color #006D86
     padding 10px
     *
       margin 15px 0
     .not-another-bootcamp-wrapper
+      margin-top 30px
       center(900px)
       padding 10px
-      .message-wrapper
+      .bootcamp-message-wrapper
         display inline
         text-align center
         overflow hidden
@@ -103,14 +111,6 @@ p
           width auto\9
           display block
           margin auto
-
-  .benefits
-    height 300px
-    background-color white
-    color #006D86
-    padding 20px
-    *
-      margin 10px 0
     .benefits-wrapper
       center(900px)
       font-weight 300
@@ -126,13 +126,14 @@ p
 
   .competitive-advantage
     height 350px
-    background-color white
-    color #006D86
+    background-color #FFFAF5
+    color #D96C00
     padding 20px
     *
       margin 20px 0
     .competitive-advantage-wrapper
       center(900px)
+      margin-top 45px
       h2
         text-transform uppercase
       p
@@ -140,13 +141,14 @@ p
 
   .accomplishments
     height 500px
-    background-color white
+    background-color #CDF5FF
     color #006D86
     padding 20px
     *
       margin 20px 0
     .accomplishments-wrapper
       center(900px)
+      margin-top 65px
       h2
         text-transform uppercase
         text-align center
@@ -167,31 +169,35 @@ p
   .guarantee
     height 400px
     background-color white
-    color black
-    padding 20px
+    color #006D86
+    padding 10px
     *
       margin 20px 0
     .guarantee-wrapper
       center(900px)
       padding 10px
-      display inline
-      text-align center
-      overflow hidden
-      span(5/8)
-      margin-right 30px
-      h2
-        text-transform uppercase
-      p
-        font-size 1rem
-    .placeholder
-      col(2/8)
-      float right
-      img
-        max-width 80%
-        height auto
-        width auto\9
-        display block
-        margin auto
+      margin-top 30px
+      .guarantee-message-wrapper
+        display inline
+        text-align center
+        overflow hidden
+        span(8/12)
+        margin-right 30px
+        h2
+          text-transform uppercase
+        p
+          font-size 1rem
+        .guarantee-message-offer
+          font-size 1.3rem
+      .placeholder
+        span(3/12)
+        float right
+        img
+          max-width 80%
+          height auto
+          width auto\9
+          display block
+          margin auto
 
   .footer
     height 400px
