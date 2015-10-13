@@ -27,17 +27,13 @@ p
     background-image url(../../../images/websitecode.jpeg)
     background-size cover
     color white
-    .layer
-      width 100%
-      height 100%
-      background-color rgba(248, 247, 216, 0.7)
     .title
       text-align center
       overflow hidden
       h1
         font-size 5rem
-        margin-top 100px
         font-weight 100
+        margin-top 100px
 
   .newsletter
     box-sizing border-box
@@ -83,35 +79,24 @@ p
           outline none
 
   .not-another-bootcamp
-    height 650px
+    height 600px
     background-color white
     color #006D86
     padding 10px
     *
       margin 15px 0
     .not-another-bootcamp-wrapper
-      margin-top 30px
+      margin-top 40px
       center(900px)
       padding 10px
       .bootcamp-message-wrapper
         display inline
-        text-align center
         overflow hidden
-        span(5/8)
         margin-right 30px
         h2
           text-transform uppercase
         p
           font-size 1rem
-      .placeholder
-        col(2/8)
-        float right
-        img
-          max-width 80%
-          height auto
-          width auto\9
-          display block
-          margin auto
     .benefits-wrapper
       center(900px)
       font-weight 300
@@ -124,6 +109,18 @@ p
         col(4/8)
         padding 10px
         border 2px solid #006D86
+
+
+    @media screen and (max-width: 900px)
+      .not-another-bootcamp-wrapper
+        center(700px)
+        .bootcamp-message-wrapper
+          p
+            font-size .8rem
+      .benefits-wrapper
+        center(700px)
+
+
 
   .competitive-advantage
     height 350px
@@ -139,6 +136,11 @@ p
         text-transform uppercase
       p
         font-size 1rem
+
+    @media screen and (max-width: 900px)
+      padding 15px
+      .competitive-advantage-wrapper
+        center(700px)
 
   .accomplishments
     height 500px
@@ -167,8 +169,18 @@ p
             font-weight 100
             font-size .8rem
 
+    @media screen and (max-width: 900px)
+      height 600px
+      padding 10px
+      .accomplishments-wrapper
+        center(700px)
+        margin-top 40px
+        .badges-wrapper
+          .badge
+            col(1/2, uncycle: 4, cycle: 2)
+
   .guarantee
-    height 400px
+    height 300px
     background-color white
     color #006D86
     padding 10px
@@ -177,28 +189,19 @@ p
     .guarantee-wrapper
       center(900px)
       padding 10px
-      margin-top 30px
+      margin-top 20px
       .guarantee-message-wrapper
-        display inline
-        text-align center
         overflow hidden
-        span(8/12)
-        margin-right 30px
         h2
           text-transform uppercase
         p
           font-size 1rem
         .guarantee-message-offer
           font-size 1.3rem
-      .placeholder
-        span(3/12)
-        float right
-        img
-          max-width 80%
-          height auto
-          width auto\9
-          display block
-          margin auto
+
+    @media screen and (max-width: 900px)
+      .guarantee-wrapper
+        center(700px)
 
   .footer
     height 400px
