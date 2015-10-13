@@ -1,14 +1,20 @@
 @import '../../../styles'
+edit()
 
 body
   box-sizing border-box
 
-h1, h2
+h1, h2, h3
   font-family 'Work Sans', sans-serif
 
 h2
   font-size 2.5rem
   font-weight 100
+
+h3
+  font-size 1.2rem
+  weight 100
+  margin 0
 
 p
   font-weight 100
@@ -47,19 +53,25 @@ p
       span(1/4, 1/6)
       padding 4px 0
       text-align right
-      line-height 19px
       margin-right 10px
     .news-input
       col(1/4)
+      overflow hidden
       .email-input
         line-height 19px
         width 100%
-        background-color #FF7F00
-        border-bottom 1px solid #A75300
+        background transparent
+        z-index 100
         color black
-        font-size 1rem
+        font-size .8rem
         &:focus
           outline none
+      .email-label
+        width 100%
+        bottom 0
+        text-align left
+        color white
+        padding 0 0.5em
     .news-submit
       .email-submit
         border 2px solid #005467
@@ -68,6 +80,8 @@ p
         line-height 19px
         background-color inherit
         padding 5px 20px
+        border-radius 5px
+        border 2px solid #005467
         &:hover
           color #A75300
           border 2px solid #A75300
