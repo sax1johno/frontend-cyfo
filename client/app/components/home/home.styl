@@ -12,7 +12,7 @@ h2
   font-weight 100
 
 h3
-  font-size 1.2rem
+  font-size 1rem
   weight 100
   margin 0
 
@@ -35,6 +35,15 @@ p
         font-weight 100
         margin-top 100px
 
+    +below(662px)
+      .title
+        h1
+          font-size 4rem
+    +below(531px)
+      .title
+        h1
+          font-size 3rem
+
   .newsletter
     box-sizing border-box
     height 90px
@@ -43,106 +52,129 @@ p
     font-size 1rem
     font-weight 300
     padding 10px
-    .info
+    .newsletter-wrapper
       margin-top 15px
-    .news-message
-      span(1/4, 1/6)
-      padding 4px 0
-      text-align center
-      margin-right 10px
-    .news-input
-      col(1/4)
-      .email-input
-        line-height 19px
-        width 100%
-        height 100%
-        background transparent
-        z-index 100
-        color black
-        font-size .8rem
-        &:focus
-          outline none
-    .news-submit
-      .email-submit
-        border 2px solid #005467
-        border-radius 5px
-      button
-        line-height 19px
-        background-color inherit
-        padding 5px 20px
-        border-radius 5px
-        border 2px solid #005467
-        &:hover
-          color #A75300
-          border 2px solid #A75300
-        &:focus
-          outline none
+      center(900px)
+      .news-message
+        col(1/3, gutter: .5)
+        text-align right
+      .news-input
+        col(1/3, gutter: .5)
+        .email-input
+          background transparent
+          color black
+          font-size .8rem
+          width 100%
+          height 100%
+          &:focus
+            outline none
+      .news-submit
+        col(1/3, gutter: .5)
+        .email-submit
+          border 2px solid #005467
+          border-radius 5px
+          font-size .8rem
+        button
+          border-radius 5px
+          border 2px solid #005467
+          padding 2px 20px
+          &:hover
+            color #A75300
+            border 2px solid #A75300
+          &:focus
+            outline none
+
 
   .not-another-bootcamp
-    height 600px
+    height 450px
     background-color white
     color #006D86
-    padding 10px
-    *
-      margin 15px 0
+    padding 20px
     .not-another-bootcamp-wrapper
-      margin-top 40px
       center(900px)
-      padding 10px
-      .bootcamp-message-wrapper
-        display inline
-        overflow hidden
-        margin-right 30px
-        h2
-          text-transform uppercase
-        p
-          font-size 1rem
-    .benefits-wrapper
-      center(900px)
-      font-weight 300
-      font-size .8rem
-      .benefit-column-1
-        col(4/8)
-        padding 10px
-        border 2px solid #006D86
-      .benefit-column-2
-        col(4/8)
-        padding 10px
-        border 2px solid #006D86
+      margin-top 30px
+      .not-another-bootcamp-text-wrapper
+        .bootcamp-message-wrapper
+          display inline
+          overflow hidden
+          h2
+            text-transform uppercase
+            line-height 40px
+            span
+              display block
+          p
+            font-size 1rem
+            margin-top 5px
+      .benefits-wrapper
+        font-weight 300
+        font-size .8rem
+        .benefit-column-1
+          col(1/2, gutter: .5)
+          padding 10px
+          border 2px solid #006D86
+        .benefit-column-2
+          col(1/2)
+          padding 10px
+          border 2px solid #006D86
 
 
-    @media screen and (max-width: 900px)
+    +below(3)
       .not-another-bootcamp-wrapper
         center(700px)
-        .bootcamp-message-wrapper
-          p
-            font-size .8rem
-      .benefits-wrapper
-        center(700px)
-
+        .not-another-bootcamp-text-wrapper
+          .bootcamp-message-wrapper
+            p
+              font-size .8rem
+        .benefits-wrapper
+          center(700px)
+    +below(595px)
+      .not-another-bootcamp-wrapper
+        center(550px)
+        margin-top 20px
+        .not-another-bootcamp-text-wrapper
+          h2
+            margin-top 0
+        .benefits-wrapper
+            margin-bottom 15px
+            .benefits
+              stack(center)
+              margin-top 5px
 
 
   .competitive-advantage
+    border-top 1px solid #cccccc
+    border-bottom 1px solid #cccccc
     height 350px
     background-color #FFFAF5
     color #006D86
     padding 20px
-    *
-      margin 20px 0
     .competitive-advantage-wrapper
       center(900px)
       margin-top 45px
       h2
         text-transform uppercase
+        margin-top 0
       p
         font-size 1rem
 
-    @media screen and (max-width: 900px)
+    +below(3)
       padding 15px
       .competitive-advantage-wrapper
         center(700px)
+        margin-top 30px
+    +below(636px)
+      .competitive-advantage-wrapper
+        center(600px)
+        margin-top 20px
+    +below(595px)
+      .competitive-advantage-wrapper
+        center(500px)
+        margin-top 10px
+        margin-bottom 10px
+
 
   .accomplishments
+    border-bottom 1px solid #cccccc
     height 500px
     background-color #CDF5FF
     color #006D86
@@ -157,8 +189,9 @@ p
         text-align center
       .badges-wrapper
         .badge
-          col(1/4)
+          col(1/4, gutter: .1)
           padding 10px
+          background-color #B2D3DA
           img
             height auto
             width auto\9
@@ -169,15 +202,24 @@ p
             font-weight 100
             font-size .8rem
 
-    @media screen and (max-width: 900px)
-      height 600px
+    +below(800px)
+      height 425px
       padding 10px
       .accomplishments-wrapper
         center(700px)
-        margin-top 40px
+        margin-top 35px
+    +below(636px)
+      .accomplishments-wrapper
+        center(600px)
+        margin-top 25px
+    +below(595px)
+      height 1000px
+      .accomplishments-wrapper
+        center(500px)
         .badges-wrapper
           .badge
-            col(1/2, uncycle: 4, cycle: 2)
+            stack(center)
+
 
   .guarantee
     height 300px
@@ -192,16 +234,30 @@ p
       margin-top 20px
       .guarantee-message-wrapper
         overflow hidden
+        margin-top 0
         h2
           text-transform uppercase
+          margin-top 0
         p
           font-size 1rem
         .guarantee-message-offer
           font-size 1.3rem
 
-    @media screen and (max-width: 900px)
+    +below(800px)
       .guarantee-wrapper
         center(700px)
+    +below(636px)
+      height 250px
+      .guarantee-wrapper
+        center(600px)
+        margin-top 15px
+        .guarantee-message-wrapper
+          h2
+            text-align center
+    +below(595px)
+       height 300px
+      .guarantee-wrapper
+        center(550px)
 
   .footer
     height 400px
