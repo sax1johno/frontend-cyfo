@@ -1,9 +1,8 @@
-import {homeDirective} from './home.directive';
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
-import ngAnimate from 'angular-animate';
+import {homeDirective} from './home.directive';
 
-export const home = angular.module('home', [])
+export const home = angular.module('home', [uiRouter])
   .config(function($stateProvider, $urlRouterProvider) {
       $urlRouterProvider.otherwise('/');
 
