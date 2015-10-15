@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engine": "node >= 4.1.1",
   "scripts": {
     "test": "karma start",
     "start": "gulp"

@@ -1,13 +1,13 @@
 @import '../styles'
-@import url(http://fonts.googleapis.com/css?family=Open\+Sans:300,400)
-@import url(http://fonts.googleapis.com/css?family=Work\+Sans:100)
+@import url(//fonts.googleapis.com/css?family=Open\+Sans:300,400)
+@import url(//fonts.googleapis.com/css?family=Work\+Sans:100)
 
 html
 body
   height 100vm
 
 body
-  background-color #525252
+  background-color body-bg
   font-family 'Open Sans', sans-serif
   *
     box-sizing border-box
@@ -42,11 +42,14 @@ a
         margin-left: 20px
         cursor pointer
         &:hover
-          color #FFB770
+          color accent-light
       .apply
-        border 2px solid #D96C00
+        border 2px solid accent-dark
         padding 5px 10px
         border-radius 5px
+        &:hover
+          background: accent-dark
+          color: white;
 
   main
     padding-top navbar-height
