@@ -23,6 +23,39 @@ transform-origin()
 user-select()
 	vendor('user-select', arguments)
 
+filter()
+	vendor('filter', arguments)
+
+blur()
+	filter("blur(", arguments, ")")
+	
+brightness()
+	filter("brightness(", arguments, ")")
+
+contrast()
+	filter("contrast(", arguments, ")")
+
+drop-shadow()
+	filter("drop-shadow(", arguments, ")")
+
+grayscale()
+	filter("greyscale(", arguments, ")")
+
+hue-rotate()
+	filter("hue-rotate(", arguments, ")")
+
+invert()
+	filter("invert(", arguments, ")")
+
+opacity()
+	filter("opacity(", arguments, ")")
+
+saturate()
+	filter("saturate(", arguments, ")")
+
+sepia()
+	filter("sepia(", arguments, ")")
+
 background-linear-gradient(startPoint, startColor, startInterval, endColor, endInterval, deprecatedWebkitStartPoint = false, deprecatedWebkitEndPoint = false)
 	background-color startColor
 	if deprecatedWebkitStartPoint && deprecatedWebkitEndPoint
