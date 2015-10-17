@@ -1,9 +1,9 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
-import angularMaterial from 'angular-material';
+import ngMaterial from 'angular-material';
 import {homeDirective} from './home.directive';
 
-export const home = angular.module('home', [uiRouter, angularMaterial])
+export const home = angular.module('home', [uiRouter, ngMaterial])
   .config(function($stateProvider, $urlRouterProvider) {
       $urlRouterProvider.otherwise('/');
 
