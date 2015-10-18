@@ -6,19 +6,20 @@ body
 
 h1, h2, h3, h4
   font-family 'Work Sans', sans-serif
+  font-weight 100
+
+h1
+  font-size 5rem
 
 h2
   font-size 2.5rem
-  font-weight 100
 
 h3
-  font-size 1.5rem
-  weight 100
+  font-size 1.3rem
   margin 0
 
 h4
   font-size 1.2rem
-  weight 100
   margin 0
 
 p
@@ -37,8 +38,6 @@ p
       text-align center
       overflow hidden
       h1
-        font-size 5rem
-        font-weight 100
         margin-top 100px
 
     +below(662px)
@@ -79,7 +78,6 @@ p
             outline none
             border-color white
             box-shadow 0 0 10px white
-            
       .news-submit
         col(1/3)
         .email-submit
@@ -112,10 +110,33 @@ p
           &:focus
             outline none
 
-    +below(625px)
-      height 100px
+    +below(900px)
       .newsletter-wrapper
-        margin-top 2px
+        center(800px)
+        .news-message
+          h3
+            font-size 1.2rem
+        .news-submit
+          button
+            padding 2px 40px
+    +below(725px)
+      .newsletter-wrapper
+        center(625px)
+        .news-message
+          h3
+            font-size 1rem
+        .news-input
+          .email-input
+            width 100%
+        .news-submit
+          .email-submit
+            font-size 1rem
+          button
+            padding 2px 20px
+    +below(625px)
+      height 130px
+      .newsletter-wrapper
+        margin 10px 0
         center(300px)
         .news-message, .news-input, .news-submit
           stack(center)
@@ -123,8 +144,11 @@ p
           margin-bottom 3px
         .news-input
           .email-input
-            width 80%
+            width 100%
         .news-submit
+          width 100%
+          .email-submit
+            width 100%
           button
             padding 2px 40px
 
@@ -161,7 +185,7 @@ p
           border 2px solid primary-dark
 
 
-    +below(3)
+    +below(800px)
       .not-another-bootcamp-wrapper
         center(700px)
         .text-wrapper
@@ -182,6 +206,8 @@ p
             .benefits
               stack(center)
               margin-top 5px
+    +below(535px)
+      height 500px
 
 
   .competitive-advantage
@@ -200,20 +226,19 @@ p
       p
         font-size 1rem
 
-    +below(3)
+    +below(800px)
       padding 15px
       .competitive-advantage-wrapper
         center(700px)
         margin-top 30px
+        p
+          font-size .8rem
     +below(636px)
       .competitive-advantage-wrapper
         center(600px)
-        margin-top 20px
     +below(595px)
       .competitive-advantage-wrapper
         center(500px)
-        margin-top 10px
-        margin-bottom 10px
 
 
   .accomplishments
@@ -262,13 +287,13 @@ p
 
 
   .guarantee
-    height 300px
+    height 350px
     background-color white
     color #006D86
-    padding 10px
+    padding 20px
     .guarantee-wrapper
       center(900px)
-      margin-top 60px
+      margin-top 55px
       .guarantee-message-wrapper
         overflow hidden
         margin-top 0
@@ -284,14 +309,15 @@ p
       .guarantee-wrapper
         center(800px)
     +below(636px)
-      height 250px
+      height 300px
       .guarantee-wrapper
         center(700px)
         margin-top 15px
         .guarantee-message-wrapper
           h2
             text-align center
-
+          p
+            font-size .8rem
 
   .footer
     height 400px
