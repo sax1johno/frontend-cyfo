@@ -6,10 +6,12 @@ import {appDirective} from './app.directive';
 
 
 import {home} from './components/home/home';
+import {about} from './components/about/about';
 
 angular.module('app', [
   uiRouter,
   ngMaterial,
-  home.name
+  home.name,
+  about.name
 ])
 .directive('app', appDirective);
