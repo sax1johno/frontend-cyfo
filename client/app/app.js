@@ -7,11 +7,14 @@ import {appDirective} from './app.directive';
 
 import {home} from './components/home/home';
 import {about} from './components/about/about';
+import {programs} from './components/program/program';
+
 
 angular.module('app', [
   uiRouter,
   ngMaterial,
   home.name,
-  about.name
+  about.name,
+  programs.name
 ])
 .directive('app', appDirective);
